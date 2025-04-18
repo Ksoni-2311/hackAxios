@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WnCC Replica</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body >
+  <header>
+    <nav class="head">
+      <div class="logo"><img src="./axios.png" alt="" class="axios-logo"></div>
+      <ul class="nav-links">
+        <li>HOME</li>
+        <li>About</li>
+        <li ><a href="#event">EVENTS</a></li>
+        <li><a style="color: white; font-style: normal;" href="#team">TEAM</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><div class="bell"><i class="fa-solid fa-bell"></i></div></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="social-icons">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-github"></i>
+    <i class="fab fa-whatsapp"></i>
+    <i class="fab fa-linkedin" href="https://www.linkedin.com/company/axios-iiit-bhopal/posts/?feedView=all"></i>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+        <h1 class="hero-text-heading1">THE DEVELOPMENT CLUB </h1>
+        <h2>OF IIIT BHOPAL</h2>
+        <h2><span class="yellow" id="display"></span><span>_</span></h2>
+        <!-- Replace this with your actual Spline URL -->
+        <!-- <iframe src="https://prod.spline.design/IDe05FgmBc4yNGZ6/scene.splinecode" 
+        frameborder="0"
+        width="100%"
+        height="500px"
+        style="max-width: 100%;">
+        </iframe> -->
+
+      <!-- js... text -->
+    </div>
+    <div class="back-img-container">
+      <!-- image -->
+        <img src="./axiosOrg.png" alt="" class="back-img">
+        <div class="illustration">
+          <div class="laptop">
+            <!-- About us section -->
+            <section >
+            <div class="about-axios">
+              <div >
+                <img src="axios.png" alt="" class="axios-image">
+              </div>
+              <div class="axios-about-text">
+                <div class="axios-info">
+                  <h1>Vision </h1> "At Axios, we envision a future where the boundless potential of technology transcends limits and ignites transformative change. We aim to be the driving force behind a community of innovators, united in pursuit of groundbreaking discoveries and excellence."
+                </div>
+                <br><br>
+                <div>
+                  <h1>Mission </h1> "Axios aims to serve as a gateway for students at our institute, opening doors to the dynamic technical communities in web development, app development, AI/ML, data science, VLSI, and beyond. Our mission is to guide each student along a path that aligns with their passions and goals, providing mentorship, resources, and hands-on experiences that empower them to excel."
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="initiative-box" >
+          <h1 class="initiative">Initiatives</h1><br><br>
+          <div class="carousel-container">
+            <div class="arrow left-arrow" onclick="prevSlide()">&lt;</div>
+            <div id="carousel-content">
+              <!-- Dynamic content goes here -->
+            </div>
+            <div class="arrow right-arrow" onclick="nextSlide()">&gt;</div>
+          </div>
+        </div>
+  </section>
+  <p id="team" class="team-deatails-heading">Team Details</p>
+        <div class="team" >
+          <div>
+            <img src="./p1.jpeg" alt="" class="team-mentors-pics">
+            <br>
+            <span style="text-align:center"></span>
+          </div>
+          <div>
+            <img src="./p2.jpg" alt="" class="team-mentors-pics">
+          </div>
+          <div>
+            <img src="./p3.jpeg" alt="" class="team-mentors-pics">
+          </div>
+          <!-- students team details -->
+      </div>
+      <div class="student-team">
+        <div class="team-member" data-name="Alice" data-role="Web Developer Lead" data-achievements="Built the college app, Won 3 hackathons">
+          <img src="./p1.jpeg" alt="" class="team-members-pics">
+          <div class="hover-details">Name: Alice<br>Role: Web Developer Lead</div>
+          <div class="achievements"></div>
+        </div>
+        <div class="team-member" data-name="Alice" data-role="Developer" data-achievements="Built the college app, Won 3 hackathons">
+          <img src="./lead.jpg" alt="" class="team-members-pics">
+          <div class="hover-details">Name: Alice<br>Role: Developer</div>
+          <div class="achievements"></div>
+        </div>
+        <div class="team-member" data-name="Alice" data-role="Developer" data-achievements="Built the college app, Won 3 hackathons">
+          <img src="./lead.jpg" alt="" class="team-members-pics">
+          <div class="hover-details">Name: Alice<br>Role: Developer</div>
+          <div class="achievements"></div>
+        </div>
+        <div class="team-member" data-name="Alice" data-role="Developer" data-achievements="Built the college app, Won 3 hackathons">
+          <img src="./lead.jpg" alt="" class="team-members-pics">
+          <div>
+            <div class="hover-details">Name: Alice<br>Role: Developer</div>
+          <div class="achievements"></div>
+          </div>
+        </div>
+        <!-- Repeat the div for other members, with different data- attributes -->
+      </div>
+      <!-- Contact Section -->
+<div id="contact" class="contact-section">
+  <h2 class="contact-heading">Contact Info</h2>
+  
+        <div class="contact-form-container">
+          <h3>Get in Touch with Us</h3>
+          <p>We are always looking for new exciting projects and collaborations. Feel Free to contact us!</p>
+          
+          <form class="contact-form">
+            <div class="form-row">
+              <input type="text" placeholder="Full Name" class="form-input">
+              <input type="email" placeholder="Email Address" class="form-input">
+            </div>
+            <input type="text" placeholder="Subject" class="form-input full-width">
+            <textarea placeholder="Type Message Here" rows="4" class="form-textarea"></textarea>
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="axios-footer">
+        <div class="footer-content">
+          <!-- Club Info -->
+          <div class="footer-section">
+            <h2>Axios Club</h2>
+            <p>IIIT Bhopal's official Web Development and Tech Club.</p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Social Links -->
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#">Instagram</a>
+              <a href="#">GitHub</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          &copy; 2025 Axios Club, IIIT Bhopal. All rights reserved.
+        </div>
+      </footer>
+  <script>
+    
+    const members = document.querySelectorAll('.team-member');
+  
+    members.forEach(member => {
+      member.addEventListener('click', () => {
+        // Collapse others
+        members.forEach(m => {
+          if (m !== member) m.classList.remove('expanded');
+        });
+  
+        member.classList.toggle('expanded');
+  
+        const achievementsDiv = member.querySelector('.achievements');
+        const name = member.getAttribute('data-name');
+        const role = member.getAttribute('data-role');
+        const achievements = member.getAttribute('data-achievements');
+  
+        achievementsDiv.innerHTML = `
+          <strong>${name}</strong> - ${role}<br><br>
+          <u>Achievements:</u><br>
+          ${achievements}
+        `;
+      });
+    });
+    
+    const initiatives = [
+      {
+        title: `Newsletter <br>`,
+        content: `The WnCC newsletter is all about delivering the latest and greatest news in the tech space! Now it has been made even more interesting by linking to entertaining and thought provoking videos. We envision the newsletter to be not only a source of latest news but also of nostalgia for the alumni. You will definitely enjoy the WnCC Newsletter!`
+      },
+      {
+        title: 'Workshops',
+        content: `We conduct hands-on workshops on various tech topics including AI, web dev, app dev, and more! They're perfect for students wanting to build practical skills.`
+      },
+      {
+        title: 'Projects',
+        content: `Our club works on exciting projects throughout the year—contributions from members are encouraged and mentored!`
+      }
+    ];
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const { title, content } = initiatives[currentIndex];
+      document.getElementById('carousel-content').innerHTML = `
+        <h2>${title}</h2>
+        <br>
+        <p>${content}</p>
+      `;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % initiatives.length;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + initiatives.length) % initiatives.length;
+      updateCarousel();
+    }
+
+    // Initialize with the first slide
+    updateCarousel();
+    
+      const words = ["WEB DEVELOPMENT", "APP DEVELOPMENT", "JAVASCRIPT", "HACKTHRONS","CLOUD","AI/ML"];
+  const display = document.getElementById("display");
+
+  let wordIndex = 0;
+
+  function showWord(word) {
+    let i = 0;
+    display.textContent = "";
+
+    // Step 1: Show each letter one by one
+    const showInterval = setInterval(() => {
+      display.textContent += word[i];
+      i++;
+      if (i === word.length) {
+        clearInterval(showInterval);
+
+        // Wait a bit, then start removing letters
+        setTimeout(() => removeLetters(word), 100);
+      }
+    }, 100);
+  }
+
+  function removeLetters(word) {
+    let i = 0;
+
+    const removeInterval = setInterval(() => {
+      const chars = display.textContent.split("");
+      if (i < chars.length) {
+        chars[i] = "";
+        display.textContent = chars.join("");
+        i++;
+      } else {
+        clearInterval(removeInterval);
+        // Move to the next word
+        wordIndex = (wordIndex +words.length) % words.length;
+        setTimeout(() => showWord(words[wordIndex]), 100);
+      }
+    }, 100);
+  }
+  function removeLetters() {
+  let i = 0;
+
+  const removeInterval = setInterval(() => {
+    const chars = display.textContent.split("");
+    if (i < chars.length) {
+      chars.splice(chars.length - 1, 1); // actually remove the character at position i
+      display.textContent = chars.join("");
+    } else {
+      clearInterval(removeInterval);
+      // Move to the next word
+      wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(() => showWord(words[wordIndex]), 100);
+    }
+  }, 500);
+}
+
+  // Start the cycle
+  showWord(words[wordIndex]);
+
+  </script>
+  
+  
+
+</body>
+</html>
