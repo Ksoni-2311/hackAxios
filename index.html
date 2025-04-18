@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body >
-  <header>
+  <header >
     <nav class="head">
       <div class="logo"><img src="./axios.png" alt="" class="axios-logo"></div>
       <ul class="nav-links">
-        <li>HOME</li>
-        <li>About</li>
-        <li ><a href="#event">EVENTS</a></li>
+        <li><a style="color: white; font-style: normal;" href="#Home">HOME</a></li>
+        <li><a style="color: white; font-style: normal;" style="color: white; font-style: normal;" href="#about">ABOUT</a></li>
+        <li ><a style="color: white; font-style: normal;" href="#Initiative">INITIATIVES</a></li>
         <li><a style="color: white; font-style: normal;" href="#team">TEAM</a></li>
-        <li><a href="#">CONTACT</a></li>
-        <li><div class="bell"><i class="fa-solid fa-bell"></i></div></li>
+        <li><a style="color: white; font-style: normal;" href="#contact">CONTACT</a></li>
+        <li><div style="opacity: 0;" class="bell"><i class="fa-solid fa-bell"></i></div></li>
       </ul>
     </nav>
   </header>
@@ -31,8 +31,8 @@
     <i class="fab fa-linkedin" href="https://www.linkedin.com/company/axios-iiit-bhopal/posts/?feedView=all"></i>
   </div>
 
-  <section class="hero">
-    <div class="hero-text">
+  <section  class="hero">
+    <div id="Home" class="hero-text">
         <h1 class="hero-text-heading1">THE DEVELOPMENT CLUB </h1>
         <h2>OF IIIT BHOPAL</h2>
         <h2><span class="yellow" id="display"></span><span>_</span></h2>
@@ -46,7 +46,7 @@
 
       <!-- js... text -->
     </div>
-    <div class="back-img-container">
+    <div id="about" class="back-img-container">
       <!-- image -->
         <img src="./axiosOrg.png" alt="" class="back-img">
         <div class="illustration">
@@ -54,7 +54,7 @@
             <!-- About us section -->
             <section >
             <div class="about-axios">
-              <div >
+              <div  >
                 <img src="axios.png" alt="" class="axios-image">
               </div>
               <div class="axios-about-text">
@@ -69,7 +69,7 @@
             </div>
           </section>
         </div>
-        <div class="initiative-box" >
+        <div id="Initiative" class="initiative-box" >
           <h1 class="initiative">Initiatives</h1><br><br>
           <div class="carousel-container">
             <div class="arrow left-arrow" onclick="prevSlide()">&lt;</div>
@@ -82,39 +82,76 @@
   </section>
   <p id="team" class="team-deatails-heading">Team Details</p>
         <div class="team" >
-          <div>
-            <img src="./p1.jpeg" alt="" class="team-mentors-pics">
-            <br>
-            <span style="text-align:center"></span>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div>
+                <img src="./p1.jpeg" alt="" class="team-mentors-pics">
+                <br>
+                <span style="text-align:center"></span>
+              </div>
+              <div style="text-align:left "  class="flip-card-back">
+                <h3 >Dr. Merry David</h3>
+                <p ">Contact: +91-9876543210</p>
+              </div>
+            </div>
           </div>
+          
+          
           <div>
             <img src="./p2.jpg" alt="" class="team-mentors-pics">
+            <div style="text-align: left"  class="flip-card-back">
+              <h3 >Dr. Glory Bush</h3>
+              <p >Contact: +91-9876543210</p>
+            </div>
           </div>
           <div>
             <img src="./p3.jpeg" alt="" class="team-mentors-pics">
+            <div style="text-align:left"  class="flip-card-back">
+              <h3 >Dr.Travis Head</h3>
+              <p>Contact: +91-9876543210</p>
+            </div>
           </div>
           <!-- students team details -->
       </div>
       <div class="student-team">
-        <div class="team-member" data-name="Alice" data-role="Web Developer Lead" data-achievements="Built the college app, Won 3 hackathons">
-          <img src="./p1.jpeg" alt="" class="team-members-pics">
+        <div class="team-member" data-name="Alice" data-role="Web Developer Lead" data-achievements="Built a responsive e-commerce site with secure checkout.
+
+        Boosted site speed by 40% with performance optimization.
+        
+        Integrated REST APIs and JWT-based authentication.
+        
+        ">
+          <img src="./m1.jpeg" alt="" class="team-members-pics">
           <div class="hover-details">Name: Alice<br>Role: Web Developer Lead</div>
           <div class="achievements"></div>
         </div>
-        <div class="team-member" data-name="Alice" data-role="Developer" data-achievements="Built the college app, Won 3 hackathons">
-          <img src="./lead.jpg" alt="" class="team-members-pics">
-          <div class="hover-details">Name: Alice<br>Role: Developer</div>
+        <div class="team-member" data-name="
+        Bob" data-role="Developer" data-achievements="Launched a cross-platform app with 10K+ downloads.
+
+        Used Firebase for real-time data and login.
+        
+        Released 3 apps with a 4.6+ user rating.">
+          <img src="./m3.jpeg" alt="" class="team-members-pics">
+          <div class="hover-details">Name: Bob<br>Role:App Developer Lead</div>
           <div class="achievements"></div>
         </div>
-        <div class="team-member" data-name="Alice" data-role="Developer" data-achievements="Built the college app, Won 3 hackathons">
-          <img src="./lead.jpg" alt="" class="team-members-pics">
-          <div class="hover-details">Name: Alice<br>Role: Developer</div>
+        <div class="team-member" data-name="Rio" data-role="Web Master" data-achievements="Managed 10+ sites with 99.9% uptime.
+
+        Automated backups and server monitoring.
+        
+        Migrated old CMS to WordPress, improving UX.">
+          <img src="./32.jpeg" alt="" class="team-members-pics">
+          <div class="hover-details">Name: Rio<br>Role: Web Master</div>
           <div class="achievements"></div>
         </div>
-        <div class="team-member" data-name="Alice" data-role="Developer" data-achievements="Built the college app, Won 3 hackathons">
-          <img src="./lead.jpg" alt="" class="team-members-pics">
+        <div class="team-member" data-name="Berman" data-role="App Master" data-achievements="Led ride-sharing app backend architecture.
+
+        Integrated analytics and crash reporting tools.
+        
+        Mentored devs, reducing bugs by 35%.">
+          <img src="./4.jpeg" alt="" class="team-members-pics">
           <div>
-            <div class="hover-details">Name: Alice<br>Role: Developer</div>
+            <div class="hover-details">Name: Berman<br>Role:App Master</div>
           <div class="achievements"></div>
           </div>
         </div>
@@ -152,8 +189,8 @@
           <div class="footer-section">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Events</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#Initiatives">Initiatives</a></li>
               <li><a href="#team">Team</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
@@ -171,7 +208,7 @@
         </div>
       
         <div class="footer-bottom">
-          &copy; 2025 Axios Club, IIIT Bhopal. All rights reserved.
+          Axios Club, IIIT Bhopal
         </div>
       </footer>
   <script>
@@ -202,8 +239,21 @@
     
     const initiatives = [
       {
-        title: `Newsletter <br>`,
-        content: `The WnCC newsletter is all about delivering the latest and greatest news in the tech space! Now it has been made even more interesting by linking to entertaining and thought provoking videos. We envision the newsletter to be not only a source of latest news but also of nostalgia for the alumni. You will definitely enjoy the WnCC Newsletter!`
+        title: `App-Dev-Workshop <br>`,
+        content: `Super excited to share that AXIOS is hosting a 3-day workshop:
+App-Dev Unlocked 📱🚀
+<br>
+A beginner-friendly series to dive into:<br>
+✨ App dev fundamentals<br>
+✨ Hands-on, resume-ready project building<br>
+✨ Learning from our very own devs<br>
+<br>
+
+<br>
+Let’s code, create, and have fun together 💙
+See you there!
+— Team Axios
+`
       },
       {
         title: 'Workshops',
@@ -239,7 +289,7 @@
     // Initialize with the first slide
     updateCarousel();
     
-      const words = ["WEB DEVELOPMENT", "APP DEVELOPMENT", "JAVASCRIPT", "HACKTHRONS","CLOUD","AI/ML"];
+      const words = ["WEB DEVELOPMENT", "APP DEVELOPMENT", "JAVASCRIPT", "HACKATHON","CLOUD","AI/ML"];
   const display = document.getElementById("display");
 
   let wordIndex = 0;
